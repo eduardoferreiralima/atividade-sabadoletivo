@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular IMC</title>
+    <link rel="stylesheet" href="{% static 'CSS/imc_style.css' %}">
+</head>
+<body>
+    <a href="{% url 'inicio' %}"><button>Início</button></a>
+    <h1>Calcular IMC</h1>
+    <input type="number" id="peso" placeholder="Digete seu Peso em Kg">
+    <input type="number" id="altura" placeholder="Digite sua altura em metros">
+    <button id="button_calcular">Calcular</button>
+    <h3 id="resultado"></h3>
+    <h3 id="classificação"></h3>
+
+    
+</body>
+
+<script src="{% static 'JS/script.js' %}"></script>
+</html>

@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saúde</title>
+    <link rel="stylesheet" href="{% static 'CSS/style.css' %}">
+</head>
+
+
+<body>
+
+    <h1 id="tittle">Cuide da Sua Saúde: A Importância dos Cuidados Pessoais</h1>
+    <p id="paragrafo">A saúde e os cuidados pessoais são fundamentais para o bem-estar
+quados, que inclua alimentação balanceada, exercícios físicos e 
+controle do estresse, ajuda a prevenir doenças, melhora a autoestima
+ e aumenta a disposição. 
+ Cuidar de si mesmo é um ato de amor que reflete em todos os aspectos 
+ da vida, desde as relações interpessoais até o desempenho no trabalho.    geral e a qualidade de vida. Manter uma rotina de cuidados ade
+
+        Para começar a cuidar melhor da sua saúde, 
+        que tal calcular seu Índice de Massa Corporal (IMC)? 
+        Isso pode te ajudar a entender mais sobre seu estado físico. 
+        Clique no botão abaixo para acessar a calculadora de IMC!</p>
+
+    <a href="{% url 'calcular_imc' %}"><button style="text-decoration: none;" id="button_imc">Calcular IMC</button></a>
+    
+</body>
+</html>
